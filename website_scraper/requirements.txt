@@ -1,0 +1,6 @@
+pandas~=2.0.3
+requests~=2.25.1
+langdetect~=1.0.9
+tqdm~=4.60.0
+beautifulsoup4~=4.9.3
+google~=3.0.0
