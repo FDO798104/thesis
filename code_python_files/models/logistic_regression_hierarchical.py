@@ -753,7 +753,7 @@ def test_model_perormance(X_test, y_test,
   print("F1 of 2nd digit model:", f1_score_of2)
   print("F1 of 3,4 and 5th digit model):", f1_score_of345)
 
-
+  # kendall's tau metric is not used in final version of thesis.
   kendalltau5, p5 = kendalltau(y_test, y_pred_nace)
   kendalltau4, p5 = kendalltau([string[:4] for string in y_test], [string[:4] for string in y_pred_nace])
   kendalltau3, p5 = kendalltau([string[:3] for string in y_test], [string[:3] for string in y_pred_nace])
@@ -876,7 +876,7 @@ if __name__ == "__main__":
     tf_idf_max_features_options = [50000] # keep for all
     iterations_max_options = [1000] # all models converge long before 1000 iteration
     use_class_weighting_options = [True, False] # use class weighting?
-    use_embeddings_options = [False, False] # use embeddings options
+    use_embeddings_options = [True, False] # use embeddings options
     pre_selected_use_directory_options = range(1, 10) # From which pre processed directory (pre made for faster processing during large scale testing)
     experiment_selections = [base_folder, results_folder, results_file, max_instances_options,
                              random_state_values, tf_idf_max_features_options, iterations_max_options,
