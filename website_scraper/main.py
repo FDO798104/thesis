@@ -272,38 +272,5 @@ def test_cloud_upload(settings_path, bucket_name):
   except:
     return False
 
-
-# use tkinter to ask for specific file location needed to execute code
-# def ask_data_path(window_title, message, filetypes_allowed):
-#   root = tk.Tk()
-#   root.withdraw()
-#
-#   # show info what file should be selected
-#   messagebox.showinfo(f'{window_title}', f'{message}')
-#
-#   # request the file, restrict what filetype can be selected
-#   requested_file_path = filedialog.askopenfile(title=window_title, filetypes=filetypes_allowed)
-#   requested_file_path = requested_file_path.name
-#   print(requested_file_path)
-#
-#   root.destroy()
-#   return requested_file_path
-
-# use tkinter to ask for specific file location needed to execute code
-# def ask_folder_path(window_title, message):
-#   root = tk.Tk()
-#   root.withdraw()
-#
-#   # show info what folder should be selected
-#   messagebox.showinfo(f'{window_title}', f'{message}')
-#
-#   # select requested folder
-#   requested_folder_path = filedialog.askdirectory(title=window_title)
-#
-#   print(requested_folder_path)
-#
-#   root.destroy()
-#   return requested_folder_path
-
 if __name__ == "__main__":
   main()
