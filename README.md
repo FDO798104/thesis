@@ -18,4 +18,8 @@ To get started, download the notebook files and open them using Google Colab. Th
 
 For the Python files, you'll need to ensure that the environment is correctly set up on your own. This may involve installing required libraries and ensuring compatibility with your system configuration.
 
-We hope you find this repository useful.
+# Note Regarding Datasets
+
+Please note that we are unable to share the datasets containing URL and NACEBEL data used in this project, as we do not own them.
+
+Nevertheless we hope you find this repository useful.
